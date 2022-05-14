@@ -12,10 +12,6 @@ public class ProductController {
     @Autowired
     private ProductService service;
     
-    @GetMapping("/")
-    public String home() {
-        return "home";
-    }
 
     @PostMapping("/addProduct")
     public Product addProduct(@RequestBody Product product) {
